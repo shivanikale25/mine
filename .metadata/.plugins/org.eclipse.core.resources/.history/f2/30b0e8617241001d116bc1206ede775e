@@ -1,0 +1,32 @@
+package shivpractise;
+
+public class MethodStudy {
+
+	public static void main(String[] args)
+	{
+     hobby();
+		
+		
+		
+	}
+
+	public static void hobby()
+	{
+		String a="Go to new place";
+		String b=" And explore that place ";
+		int c= 7;
+       String sum = a+b;
+		System.out.println(sum+c);
+	}
+	
+	public void friends()
+	{
+		int c=2;
+		String e="aru";
+		String d="mayu";
+	}
+	
+	
+	
+	
+}

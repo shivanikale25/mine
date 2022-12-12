@@ -1,0 +1,25 @@
+package seleniumsdy;
+
+public class IfElseExPrc01 {
+
+	public static void main(String[] args) 
+	{
+
+		//if speed of vehicle below 50 shows indication of average otherwise shows indication excess
+		
+		int speed=50;
+		
+		if(speed<50)
+		{
+			System.out.println("vehicle is in average speed");
+		}
+		else
+		{
+			System.out.println("vehicle is in excess speed");
+
+		}
+		
+		
+	}
+
+}

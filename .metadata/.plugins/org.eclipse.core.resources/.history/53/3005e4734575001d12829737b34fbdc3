@@ -1,0 +1,31 @@
+package neostoxpom;
+
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+import org.testng.Reporter;
+
+public class Listener implements ITestListener {
+
+	public static void main(String[] args) {
+     
+		
+		
+	}
+@Override
+public void onTestStart(ITestResult result) {
+	Reporter.log("testcase started succesfully", true)
+}
+@Override
+public void onTestFailure(ITestResult result) {
+	
+}
+@Override
+public void onTestSuccess(ITestResult result) {
+	
+}
+@Override
+public void onTestSkipped(ITestResult result) {
+	
+}
+
+}

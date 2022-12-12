@@ -1,0 +1,25 @@
+package exceptionHandling;
+
+public class MultiPleExceptionHandling {
+
+	public static void main(String[] args)
+	{
+
+		String a="abc";
+		String b=null;
+		
+		try {
+			
+			
+			System.out.println(a.charAt(10));
+		} 
+		catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+		
+		
+	}
+
+}

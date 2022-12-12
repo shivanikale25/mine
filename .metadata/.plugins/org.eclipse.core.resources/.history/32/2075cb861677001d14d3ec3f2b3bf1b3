@@ -1,0 +1,21 @@
+package loopexample;
+
+public class Ex01 {
+
+	public static void main(String[] args)
+	
+	{
+//print ato z
+		for(char i='A';i<='Z';i++)
+		{
+			System.out.println(i);
+		}
+		System.out.println("=====================================");
+		
+		for(char j='Z';j>='A';j--)
+		{
+			System.out.println(j);
+		}
+	}
+
+}

@@ -1,0 +1,23 @@
+package logicalprogramm;
+
+import java.util.Scanner;
+
+public class EvenOddnu {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter any number");
+		int s1 = sc.nextInt();
+		if(s1%4==0)
+		{
+			System.out.println(s1+" given number is even");
+		}
+		else
+		{
+			System.out.println(s1+"given number is odd");
+
+		}
+
+	}
+
+}

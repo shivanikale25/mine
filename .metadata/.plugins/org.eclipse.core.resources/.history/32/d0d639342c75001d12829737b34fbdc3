@@ -1,0 +1,28 @@
+package neostoxpom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import neoStoxUtility.UtilityNew;
+
+public class NeoStoxPassPage {
+
+	@FindBy(xpath = "//input[@type='password']") private WebElement password1;
+	@FindBy(id = "lnk_submitaccesspin") private WebElement submit;
+
+	
+public NeoStoxPassPage(WebDriver driver)
+{
+	PageFactory.initElements(driver, this);
+}
+public void enterpassword(String pass) throws InterruptedException
+{
+	password1.sendKeys(pass);
+	Thread.sleep(500);
+	submit.click();
+
+}
+
+}

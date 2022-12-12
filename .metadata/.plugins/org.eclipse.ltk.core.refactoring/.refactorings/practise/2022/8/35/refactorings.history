@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;generalization.GENERAKIZATION&apos; to &apos;GENERALIZATION&apos;&#x0D;&#x0A;- Original project: &apos;practise&apos;&#x0D;&#x0A;- Original element: &apos;generalization.GENERAKIZATION&apos;&#x0D;&#x0A;- Renamed element: &apos;generalization.GENERALIZATION&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;GENERAKIZATION&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;generalization{GENERAKIZATION.java[GENERAKIZATION" matchStrategy="1" name="GENERALIZATION" qualified="false" references="true" similarDeclarations="false" stamp="1661264845924" textual="false" version="1.0"/>
+</session>

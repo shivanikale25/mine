@@ -1,0 +1,56 @@
+package seleniumsdy;
+
+
+public class ElseIfE01 {
+
+	public static void main(String[] args) 
+	{
+
+		//if student marks less than 35 then fail
+		//if marks between 35-50 then 3rd class
+		//if marks 51-60 then got 2nd class
+		//if marks 61-70 then 1st class
+		//if marks 71-100 then distinction
+		int marks=66;
+//		Scanner sc=new Scanner(System.in);
+//		int s1 = sc.nextInt();
+//		System.out.println("enter number");
+		if(35>=marks)
+		{
+			System.out.println("student is fail");
+		}
+		else if(marks>=50)
+		{
+			System.out.println(" 3rd");
+		}
+		else if(marks>=60)
+		{
+			System.out.println(" 2nd clas");
+
+		}
+		else if(marks>=70) 
+		{
+			System.out.println(" 1st");
+
+		}
+		else if(marks>=80)
+			
+		{
+			System.out.println(" disc");
+	
+		}
+//		else if(marks<100)
+//		{
+//			
+//		}
+		
+		else
+		{
+			System.out.println("enter valid number");
+		}
+		
+		
+		
+	}
+
+}

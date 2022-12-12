@@ -1,0 +1,39 @@
+package problems;
+
+public class Assignment {
+
+	public static void main(String[] args)
+	{
+		//1 to 10 by ascending order
+		System.out.println("==========1 TO 10 in ascending order==========");
+for(int i=1;i<=10;i++)
+{
+	System.out.println(i);
+	
+}
+        //1 to 10 by descending order
+		System.out.println("==========1 TO 10 in descending order==========");
+	for(int i=10;i>=1;i--)
+	{
+		System.out.println(i);
+	}
+		
+	//odd number from 1 TO 10
+	System.out.println("The odd numbers");
+	for(int j=1;j<=10;j++)
+		if(j % 2 !=0)
+		{
+			System.out.println(j);
+			
+		}
+	System.out.println("The even numbers");
+	for(int j=1;j<=10;j++)
+
+	if(j % 2 == 0)
+	{
+		System.out.println(j);
+	}
+	}
+	
+
+}

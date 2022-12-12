@@ -1,0 +1,33 @@
+package neostoxpom;
+
+import neoStoxBase.Base;
+
+public class Neostoxtestngtest  extends Base{
+	
+	
+	
+	
+	//globally declaration of each class
+    //browser launched before class //intialisation 
+	
+	//login before method //calling 
+    //in @test validate userid
+	//logout after method
+	//closed browser after class
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  
+  
+}

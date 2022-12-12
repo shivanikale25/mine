@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="setposition(failed)">
+    <classes>
+      <class name="serialandparallel.Testing1">
+        <methods>
+          <include name="setposition"/>
+        </methods>
+      </class> <!-- serialandparallel.Testing1 -->
+    </classes>
+  </test> <!-- setposition(failed) -->
+  <test thread-count="5" name="setsize(failed)">
+    <classes>
+      <class name="serialandparallel.Testing2">
+        <methods>
+          <include name="setsize"/>
+        </methods>
+      </class> <!-- serialandparallel.Testing2 -->
+    </classes>
+  </test> <!-- setsize(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,40 @@
+package neostoxpom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import neoStoxUtility.UtilityNew;
+
+public class NeoStoxHomePage {
+@FindBy (id = "lbl_username") private WebElement username;
+@FindBy (id = "lbl_curbalancetop") private WebElement balance;
+@FindBy(xpath = "//span[text()='Logout']") private WebElement logout;
+
+
+public NeoStoxHomePage(WebDriver driver)
+{
+	PageFactory.initElements(driver, this);
+}
+
+public String getusername()
+{
+	String actualusername = username.getText();
+	return actualusername;
+}
+public void getbalance()
+{
+	String actualbalance = balance.getText();
+	System.out.println("actual balance is"+actualbalance);
+}
+public void logoutdone(WebDriver driver)
+{
+	username.click();
+	UtilityNew.wait(driver, 1000);
+
+	logout.click();
+}
+
+}
+

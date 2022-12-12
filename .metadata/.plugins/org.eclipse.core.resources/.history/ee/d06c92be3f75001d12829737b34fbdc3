@@ -1,0 +1,103 @@
+package neostoxTestClass;
+
+import java.io.IOException;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import neoStoxBase.Base;
+import neoStoxUtility.UtilityNew;
+import neostoxpom.NeoStoxHomePage;
+import neostoxpom.NeoStoxLoginPage;
+import neostoxpom.NeoStoxPassPage;
+import neostoxpom.NeoStoxPopUp;
+
+public class validateusername  extends Base{
+	NeoStoxLoginPage login;
+	NeoStoxPassPage passcode;
+	NeoStoxPopUp popuphand;
+	NeoStoxHomePage homepage;
+	
+	@BeforeClass
+	public void launchneostox() throws IOException
+	{
+		launchbrowser();
+		login=new NeoStoxLoginPage(driver);
+		passcode=new NeoStoxPassPage(driver);
+		popuphand=new NeoStoxPopUp(driver);
+		homepage=new NeoStoxHomePage(driver);
+	}
+	@BeforeMethod
+	public void signintoneostox() throws IOException, InterruptedException
+	{
+		login.enterusername(UtilityNew.readdatafrompropertyfile("mobnum"));
+		UtilityNew.wait(driver, 500);
+		login.clickonsignin();
+		UtilityNew.wait(driver, 500);
+		passcode.enterpassword(UtilityNew.readdatafrompropertyfile("pass"));
+		UtilityNew.wait(driver, 500);
+
+		passcode.clickonsubmit();
+		UtilityNew.wait(driver, 1500);
+        popuphand.popuphandle(driver);
+	}
+	@Test
+    public void validateuserid() throws IOException
+    {
+		String actualusername = homepage.getusername();
+		String expusername = UtilityNew.readdatafrompropertyfile("expusername");
+		
+		if(actualusername.equals(expusername))
+		{
+			System.out.println("actualusername is matching with expected username so test case pass" );
+		}
+		else
+		{
+			System.out.println("actualusername is not  matching with expected username test case fail" );
+		}
+
+    }
+	@AfterMethod
+	public void logoutfromneostox()
+	{
+		homepage.logoutdone(driver);
+	}
+	
+	@AfterClass
+	public void closebrow()
+	{
+		driver.close();
+	}
+	
+	
+	
+	
+	
+	
+	//globally declaration of each class
+    //browser launched before class //intialisation 
+	
+	//login before method //calling 
+    //in @test validate userid
+	//logout after method
+	//closed browser after class
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  
+  
+}

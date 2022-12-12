@@ -1,0 +1,19 @@
+package shivpractise;
+
+public class Anotherclassstudy {
+
+	public static void main(String[] args) 
+	{
+
+		weather();
+		
+		
+	}
+
+	
+	
+	public static void weather()
+	{
+		System.out.println("weather is so hot");
+	}
+}

@@ -1,0 +1,39 @@
+package pomstudy;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage 
+{
+
+	@FindBy(name = "userId") private WebElement userid;
+	
+	@FindBy(name="password") private WebElement password;
+	
+	@FindBy(xpath = "//div[text()='Sign into Upstox']") private WebElement signin;
+	
+	public LoginPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void useriduse() throws InterruptedException {
+		userid.sendKeys("CZ7039");
+		Thread.sleep(1000);
+	}
+
+	public void passworduse() throws InterruptedException
+	{
+		password.sendKeys("Shivaji@11");
+		Thread.sleep(1000);
+
+	}
+	
+	public void sign()
+	{
+		signin.click();
+	}
+	
+}

@@ -1,0 +1,47 @@
+package shivpractise;
+
+public class MethodStudy {
+
+	public static void main(String[] args)
+	{
+     hobby();
+	MethodStudy m=new MethodStudy();
+	m.friends();
+	Anotherclassstudy.weather();
+	
+	Anotherclassstudy ac=new Anotherclassstudy();
+	ac.study();
+	
+	behaviour(2, 5, " cool", " naughty");
+	
+	ac.qualities(2, "nature", "behaviour");
+	
+	}
+
+	public static void hobby()
+	{
+		String a="Go to new place";
+		String b=" And explore that place ";
+		int c= 7;
+       String sum = a+b;
+		System.out.println(sum+c);
+	}
+	
+	public void friends()
+	{
+		int c=2;
+		String e=" aru";
+		String d=" mayu ";
+		
+		System.out.println(c+"best friends are"+e+d);
+	}
+	
+	public static void behaviour(int a,int b,String c,String d)
+	{
+		int sum=a+b;
+		String sum1=c+d;	
+		System.out.println(sum + sum1);
+	}
+	
+	
+}

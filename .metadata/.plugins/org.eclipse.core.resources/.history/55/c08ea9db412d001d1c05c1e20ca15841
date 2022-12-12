@@ -1,0 +1,18 @@
+package problems;
+
+public class Pb4 {
+
+	public static void main(String[] args) {
+    char vow='Z';
+    switch (vow) {
+	case 'A':
+		System.out.println("is a vowel");
+		break;
+
+	default:
+		System.out.println("it is a consonant");
+		break;
+	}
+	}
+
+}
