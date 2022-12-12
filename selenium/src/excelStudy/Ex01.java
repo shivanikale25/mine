@@ -15,7 +15,7 @@ public class Ex01 {
 		String file = WorkbookFactory.create(myfile).getSheet("Sheet1").getRow(0).getCell(0).getStringCellValue();
 		
 		System.out.println(file);
-		
+		System.out.println();
 
 	}
 
