@@ -20,5 +20,10 @@ public class Base {
 		Reporter.log("launching browser ", true);
 	 driver.get(UtilityNew.readdatafrompropertyfile("url"));
 	driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
+	
+	
+	
+	
+	
 	}
 }
